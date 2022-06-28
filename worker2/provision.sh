@@ -9,7 +9,7 @@ echo "Install net-tools..."
 sudo apt-get install net-tools -y
 
 echo "Install Docker..."
-sudo curl -fsSL https://get.docker.com | sh
+sudo curl https://releases.rancher.com/install-docker/20.10.sh | sh
 
 echo "Allow modprobes"
 cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
